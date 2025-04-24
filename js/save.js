@@ -386,11 +386,22 @@ function saveSheet(argument) {
         page5: {
             notes_1: $('#page-5 #notes-1 textarea[name="notes-1"]').val(),
             notes_2: $('#page-5 #notes-2 textarea[name="notes-2"]').val()
-        }
+        },
+        pinnedSpells: window.pinnedSpells.map(spell => ({
+            spell_name: spell.spell_name,
+            spell_level: spell.spell_level,
+            spell_type: spell.spell_type,
+            spell_user_classes: spell.spell_user_classes,
+            casting_time: spell.casting_time,
+            range: spell.range,
+            components: spell.components,
+            duration: spell.duration,
+            description: spell.description
+        }))
     }
 
     var saveString = "var loadJson = ";
-    var saveString = saveString + JSON.stringify(sheet);
+    saveString += JSON.stringify(sheet);
 
     var file = new Blob([saveString], { type: 'application/json' });
     var a = document.createElement("a"),

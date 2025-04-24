@@ -1,0 +1,96 @@
+[
+      {
+        "spell_name": "Thunderous Smite",
+        "spell_level": 1,
+        "spell_type": "Evocation",
+        "spell_user_classes": ["Paladin"],
+        "casting_time": "Bonus Action, which you take immediately after hitting a target with a Melee weapon or an Unarmed Strike",
+        "range": "self",
+        "components": "V",
+        "duration": "Instantaneous",
+        "description": "Your strike rings with thunder that is audible within 300 feet of you, and the target takes an extra 2d6 Thunder damage from the attack. Additionally, if the target is a creature, it must succeed on a Strength saving throw or be pushed 10 feet away from you and have the Prone condition. Using a Higher-Level Spell Slot. The damage increases by ld6 for each spell slot level above 1."
+      },
+      {
+        "spell_name": "Command",
+        "spell_level": 1,
+        "spell_type": "Enchantment",
+        "spell_user_classes": ["Bard", "Cleric", "Paladin"],
+        "casting_time": "1 action",
+        "range": "60 feet",
+        "components": "V",
+        "duration": "Instantaneous",
+        "description": "You speak a one-word command to a creature you can see within range. The target must succeed on a Wisdom saving throw or follow the command on its next turn. Choose the command from these options:\nApproach. The target moves toward you by the shortest and most direct route, ending its turn if it moves within 5 feet of you. Drop. The target drops whatever it is holding and then ends its turn.\nFlee. The target spends its turn moving away from you by the fastest available means. Grovel. The target has the Prone condition and then ends its turn.\nHalt. On its turn, the target doesn’t move and takes no action or Bonus Action.\nUsing a Higher-Level Spell Slot. You can affect one additional creature for each spell slot level above 1."
+      },
+      {
+        "spell_name": "Cure Wounds",
+        "spell_level": 1,
+        "spell_type": "Abjuration",
+        "spell_user_classes": [
+          "Bard",
+          "Cleric",
+          "Druid",
+          "Paladin",
+          "Ranger"
+        ],
+        "casting_time": "Action",
+        "range": "Touch",
+        "components": "V, S",
+        "duration": "Instantaneous",
+        "description": "A creature you touch regains a number of Hit Points equal to 2d8 plus your spellcasting ability modifier.\nUsing a Higher-Level Spell Slot. The healing increases by 2d8 for each spell slot level above 1."
+      },
+      {
+        "spell_name": "Shield of Faith",
+        "spell_level": 1,
+        "spell_type": "Abjuration",
+        "spell_user_classes": [
+          "Cleric",
+          "Paladin"
+        ],
+        "casting_time": "Bonus Action",
+        "range": "60 feet",
+        "components": "V, S, M (a prayer scroll)",
+        "duration": "Concentration, up to 10 minutes",
+        "description": "A shimmering field surrounds a creature of your choice within range, granting it a +2 bonus to AC for the duration."
+      },
+      {
+        "spell_name": "Heroism",
+        "spell_level": 1,
+        "spell_type": "Enchantment",
+        "spell_user_classes": [
+          "Bard",
+          "Paladin"
+        ],
+        "casting_time": "Action",
+        "range": "Touch",
+        "components": "V, S",
+        "duration": "Concentration, up to 1 minute",
+        "description": "A willing creature you touch is imbued with bravery. Until the spell ends, the creature is immune to the Frightened condition and gains Temporary Hit Points equal to your spellcasting ability modifier at the start of each of its turns.\nUsing a Higher-Level Spell Slot. You can target one additional creature for each spell slot level above 1."
+      },
+      {
+        "spell_name": "Divine Smite",
+        "spell_level": 1,
+        "spell_type": "Evocation",
+        "spell_user_classes": [
+          "Paladin"
+        ],
+        "casting_time": "Bonus Action, which you take immediately after hitting a target with a Melee weapon or an Unarmed Strike",
+        "range": "Self",
+        "components": "V",
+        "duration": "Instantaneous",
+        "description": "The target takes an extra 2d8 Radiant damage from the attack. The damage increases by 1d8 if the target is a Fiend or an Undead\nUsing a Higher-Level Spell Slot: The damage increases by 1d8 for each spell slot level above 1."
+      },
+      {
+        "spell_name": "Guiding Bolt",
+        "spell_level": 1,
+        "spell_type": "Evocation",
+        "spell_user_classes": [
+          "Cleric"
+        ],
+        "casting_time": "Action",
+        "range": "120 feet",
+        "components": "V, S",
+        "duration": "1 round",
+        "description": "You hurl a bolt of light toward a creature within range. Make a ranged spell attack against the target. On a hit, it takes 4d6 Radiant damage, and the next attack roll made against it before the end of your next turn has Advantage.\nUsing a Higher-Level Spell Slot: The damage increases by 1d6 for each spell slot level above 1."
+      }
+
+]

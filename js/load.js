@@ -358,6 +358,21 @@ $(document).ready(function(argument) {
         $('#page-3 #spells #level-9 .spells .spell:nth-child(' + child + ') input[name="spell-name"]').val(value.spell_name);
     });
 
-
+    if (loadJson.pinnedSpells && Array.isArray(loadJson.pinnedSpells)) {
+        window.pinnedSpells = loadJson.pinnedSpells.map(spell => ({
+            spell_name: spell.spell_name,
+            spell_level: spell.spell_level,
+            spell_type: spell.spell_type,
+            spell_user_classes: spell.spell_user_classes,
+            casting_time: spell.casting_time,
+            range: spell.range,
+            components: spell.components,
+            duration: spell.duration,
+            description: spell.description
+        }));
+        displayPinnedSpells();
+    } else {
+        window.pinnedSpells = [];
+    }
 
 });

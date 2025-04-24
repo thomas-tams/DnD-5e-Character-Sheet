@@ -413,6 +413,31 @@ td {
     font-size: 1.2em;
 }
 
+#spell-search-input {
+    margin-bottom: 10px;
+}
+
+.spell-result, .pinned-spell {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.pinned-spell {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* Align content to the left */
+    gap: 15px; /* Add spacing between the image and text */
+}
+
+.pinned-spell img {
+    max-width: 600px; /* Increase the image size */
+    height: auto; /* Maintain aspect ratio */
+    margin-right: 10px; /* Add spacing to the right of the image */
+    border-radius: 8px; /* Optional: Add rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: Add a shadow for better visibility */
+}
+
 
 /* Page 4 */
 

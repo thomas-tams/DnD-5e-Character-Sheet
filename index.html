@@ -14,9 +14,11 @@
     <script type="text/javascript" src="js/extra.js"></script>
     <script type="text/javascript" src="js/changes.js"></script>
     <script type="text/javascript" src="js/add-attack.js"></script>
-    <script type="text/javascript" src="js/save.js"></script>
-    <script type="text/javascript" src="js/load.js"></script>
+    <script type="text/javascript" src="js/spell.js?nocache=<?=time()?>"></script>
+    <script type="text/javascript" src="js/save.js?nocache=<?=time()?>"></script>
+    <script type="text/javascript" src="js/load.js?nocache=<?=time()?>"></script>
     <script type="text/javascript" src="js/app.js"></script>
+
 </head>
 
 <body class="w3-container w3-flat-clouds">
@@ -37,6 +39,7 @@
         <a href="#" class="w3-bar-item w3-button w3-hover-blue-gray" onclick="openPage('page-2'); w3_close()">Inv. & NPCs</a>
         <a href="#" class="w3-bar-item w3-button w3-hover-blue-gray" onclick="openPage('page-3'); w3_close()">Spell Sheet</a>
         <a href="#" class="w3-bar-item w3-button w3-hover-blue-gray" onclick="openPage('page-5'); w3_close()">Notes</a>
+        <a href="#" class="w3-bar-item w3-button w3-hover-blue-gray" onclick="openPage('page-6'); w3_close()">Spell Search</a>
         <div class="w3-dropdown-hover">
             <button class="w3-button w3-hover-blue-gray">Options <i class="fa fa-caret-down"></i></button>
             <div id="menu-options" class="w3-dropdown-content w3-bar-block w3-animate-right">
@@ -1594,6 +1597,22 @@
                         <textarea name="notes-2" rows="15"></textarea>
                     </div>
                 </div>
+            </div>
+        </div>
+        <!-- Page 6 -->
+        <!-- Page 6 -->
+        <!-- Page 6 -->
+        <div id="page-6" class="page w3-container w3-content w3-margin-top" style="display:none">
+            <div class="w3-col w3-margin-bottom w3-card w3-round">
+                <button class="expando w3-button w3-bar-block w3-left-align w3-blue-gray">Search Spells</button>
+                <div id="spell-search" class="w3-padding w3-animate-opacity">
+                    <input type="text" id="spell-search-input" placeholder="Search for a spell..." class="w3-input w3-border">
+                    <div id="spell-results" class="w3-margin-top"></div>
+                </div>
+            </div>
+            <div class="w3-col w3-margin-bottom w3-card w3-round">
+                <button class="expando w3-button w3-bar-block w3-left-align w3-blue-gray">Pinned Spells</button>
+                <div id="pinned-spells" class="w3-padding w3-animate-opacity"></div>
             </div>
         </div>
         <!-- Footer -->
